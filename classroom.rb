@@ -6,9 +6,9 @@ class Classroom
 
     def initialize(label)
         # Create the has-many/belongs-to relationship between Classroom and Student
-        @label: label
+        @label = label
         # Create the has-many side (a classroom has many students).
-        @student: []
+        @student = []
         # Create the belongs-to side (a student belongs to a classroom)
 
     end
