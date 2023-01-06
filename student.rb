@@ -16,6 +16,8 @@ class Student < Person
   def play_hooky
     '¯\(ツ)/¯'
   end
+
+  def self.all
+    ObjectSpace.each_object(self).to_a
+  end
 end
-student1 = Student.new(1, 1, name: 'Yo', parent_permission: true)
-puts student1.name

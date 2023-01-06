@@ -1,9 +1,8 @@
 require_relative './app'
+
 class Interface
-  puts '--------------------------------------------------'
-  puts 'Welcome to my library! ͡° ͜ʖ ͡°'
+  puts 'Welcome to my library
   def interface
-    puts '--------------------------------------------------'
     puts 'Select an option: '
     puts '1 - List all books'
     puts '2 - List all people'
@@ -12,9 +11,9 @@ class Interface
     puts '5 - Create a rental'
     puts '6 - List all rentals'
     puts '7 - Exit'
-    puts '--------------------------------------------------'
   end
 end
+
 
 class Main
   def initialize
@@ -27,6 +26,7 @@ class Main
     input = gets.chomp.to_i
     cases(input)
   end
+
 
   def cases(input)
     selections = {
