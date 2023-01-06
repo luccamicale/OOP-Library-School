@@ -17,3 +17,5 @@ class Student < Person
     '¯\(ツ)/¯'
   end
 end
+student1 = Student.new(1, 1, name: 'Yo', parent_permission: true)
+puts student1.name
