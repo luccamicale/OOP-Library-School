@@ -1,51 +1,49 @@
 require_relative './app'
 
-class Interface
-  puts 'Hello, Welcome to my library'
-  def interface
-    puts 'Select an option: '
-    puts '1 - List all books'
-    puts '2 - List all people'
-    puts '3 - Create a person'
-    puts '4 - Create a book'
-    puts '5 - Create a rental'
-    puts '6 - List all rentals'
-    puts '7 - Exit'
+def menu
+  puts "\n 👋 Welcome to School Library App! 📚 \n\n"
+  puts 'Please chose an option by entering a number: '
+  options = {
+    1 => 'List all books',
+    2 => 'List all people',
+    3 => 'Create a person',
+    4 => 'Create a book',
+    5 => 'Create a rental',
+    6 => 'List all rentals for a given person id',
+    7 => 'Exit'
+  }
+  puts options.map { |key, value| "#{key}. #{value}" }.join("\n")
+end
+
+def option_case(choice)
+  case choice
+  when 1
+    list_all_books
+  when 2
+    list_all_people
+  when 3
+    create_person
+  when 4
+    create_book
+  when 5
+    create_rental
+  when 6
+    list_rentals_by_id
+  else
+    puts 'Incorect choice, chose a number between 1-7'
   end
 end
 
-class Main
-  def initialize
-    @app = App.new
-    @interface = Interface.new
-  end
-
-  def run
-    puts @interface.interface
-    input = gets.chomp.to_i
-    cases(input)
-  end
-
-  def cases(input)
-    selections = {
-      1 => 'show_books',
-      2 => 'show_people',
-      3 => 'create_person',
-      4 => 'create_book',
-      5 => 'create_rental',
-      6 => 'list_rental_id'
-    }
-    case input
-    when 1..6
-      @app.send(selections[input])
-      run
-    when 7
-      puts 'Thanks for using my library!'
-    else
-      puts 'Option doesn\'t exist ¯\_(ﾟ～ﾟ)_/¯, select another one!'
-      run
-    end
-  end
+def prompt_user
+  menu
+  choice = gets.chomp.to_i
+  choice == 7 ? quit_app : option_case(choice)
+  prompt_user
 end
-obj = Main.new
-obj.run
+
+def main
+  app = App.new
+  app.run
+end
+
+main
