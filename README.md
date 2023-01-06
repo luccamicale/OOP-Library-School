@@ -82,6 +82,8 @@ In order to run this project you need:
 - [ ] **[use the "Decorator" design pattern]**
 - [ ] **[set up associations]**
 - [ ] **[add basic UI]**
+- [ ] **[set up testing]**
+- [ ] **[preserve data]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
