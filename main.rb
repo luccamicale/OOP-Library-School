@@ -1,7 +1,7 @@
 require_relative './app'
 
 class Interface
-  puts 'Welcome to my library
+  puts 'Hello, Welcome to my library'
   def interface
     puts 'Select an option: '
     puts '1 - List all books'
@@ -14,7 +14,6 @@ class Interface
   end
 end
 
-
 class Main
   def initialize
     @app = App.new
@@ -26,7 +25,6 @@ class Main
     input = gets.chomp.to_i
     cases(input)
   end
-
 
   def cases(input)
     selections = {
