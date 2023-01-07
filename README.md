@@ -75,6 +75,19 @@ In order to run this project you need:
 - LinkedIn: [luccamicale](https://www.linkedin.com/in/luccamicale/)
 - Twitter: [@luccamicale_](https://twitter.com/LuccaMicale_)
 
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **[add Person, Student, and Teacher classes]**
+- [ ] **[use the "Decorator" design pattern]**
+- [ ] **[set up associations]**
+- [ ] **[add basic UI]**
+- [ ] **[set up testing]**
+- [ ] **[preserve data]**
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
