@@ -1,16 +1,11 @@
-require_relative './app'
+require_relative './cases'
 
 class Main
-  def initialize
-    @app = App.new
-    @interface = Interface.new
+  def start
+    app= Cases.new
+    app.run
   end
+end
 
-  def run
-    puts @interface.interface
-    input = gets.chomp.to_i
-    cases(input)
-  end
-
-obj = Main.new
-obj.run
+Main.new.start
+  
