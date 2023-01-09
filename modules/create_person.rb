@@ -13,13 +13,11 @@ module CreatePerson
         classroom = gets.chomp
         print 'Has parent permission? [Y/N]: '
         permission = gets.chomp
-        Student.new(age, classroom, name: name, parent_permission: permission)
-        puts 'Student created!'
+        Student.new(age, classroom, name: name, parent_permission: permission) puts 'Student created!'
       when 2
         print 'Specialization: '
         specialization = gets.chomp
-        Teacher.new(age, specialization, name: name)
-        puts 'Teacher created!'
+        Teacher.new(age, specialization, name: name) puts 'Teacher created!'
       end
     else
       puts 'Wrong selection!'
