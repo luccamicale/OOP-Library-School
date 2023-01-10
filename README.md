@@ -2,8 +2,7 @@
 
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+ 
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
@@ -74,6 +73,12 @@ In order to run this project you need:
 - GitHub: [@luccamicale](https://github.com/luccamicale)
 - LinkedIn: [luccamicale](https://www.linkedin.com/in/luccamicale/)
 - Twitter: [@luccamicale_](https://twitter.com/LuccaMicale_)
+
+👤 **Odette gleen**
+
+- GitHub: [@Gleennkar](https://github.com/Gleennkar)
+- Twitter: [@gleeny24](https://twitter.com/twitterhandle)
+- LinkedIn: [@gleeny](https://www.linkedin.com/in/gleeny-nkar-aa3917182)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
