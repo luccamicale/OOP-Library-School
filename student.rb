@@ -22,6 +22,3 @@ class Student < Person
     ObjectSpace.each_object(self).to_a
   end
 end
-
-student1 = Student.new(12, 1, name: 'yo', parent_permission: false)
-puts student1

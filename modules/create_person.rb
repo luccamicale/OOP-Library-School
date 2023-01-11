@@ -14,8 +14,8 @@ module CreatePerson
         print 'Has parent permission? [Y/N]: '
         permission = gets.chomp
         person = Student.new(age, classroom, name: name, parent_permission: permission)
-        @people.push({ 'id' => person.id, 'age' => person.age, 'classroom' => person.classroom,
-                       'name' => person.name, 'parent_permission' => person.parent_permission })
+        @people.push({ 'id' => person.id, 'age' => person.age, 'classroom' => person.classroom, 'name' => person.name,
+                       'parent_permission' => person.parent_permission })
         puts 'Student created!'
       when 2
         print 'Specialization: '

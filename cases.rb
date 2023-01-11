@@ -3,8 +3,6 @@ require_relative './interface'
 require_relative './modules/create_book'
 require_relative './modules/exit'
 class Cases
-  include CreateBook
-  include ExitApp
   def initialize
     @app = App.new
     @interface = Interface.new
@@ -26,9 +24,6 @@ class Cases
       6 => 'list_rental_id',
       7 => 'save_data'
     }
-    # exit = {
-    #   7 => 'write_books'
-    # }
     case input
     when 1..6
       @app.send(selections[input])
