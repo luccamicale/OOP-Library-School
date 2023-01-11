@@ -19,7 +19,8 @@ module WriteData
       added_person = data_from_file.push(new_person).to_json
       File.write(json_file, added_person)
     else
-      new_student = { id: person.id, age: person.age, classroom: person.classroom, name: person.name, parent_permission: person.parent_permission }
+      new_student = { id: person.id, age: person.age, classroom: person.classroom, name: person.name,
+                      parent_permission: person.parent_permission }
       added_person = data_from_file.push(new_student).to_json
       File.write(json_file, added_person)
     end
