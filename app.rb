@@ -9,6 +9,8 @@ require_relative './modules/create_person'
 require_relative './modules/create_book'
 require_relative './modules/create_rental'
 require_relative './modules/list_rental_id'
+require_relative './data/read_data'
+require_relative './modules/exit'
 
 class App
   include ListBooks
