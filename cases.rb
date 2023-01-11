@@ -7,11 +7,13 @@ class Cases
     @app = App.new
     @interface = Interface.new
   end
+
   def run
     puts @interface.interface
     input = gets.chomp.to_i
     option(input)
   end
+
   def option(input)
     selections = {
       1 => 'show_books',
@@ -35,7 +37,3 @@ class Cases
     end
   end
 end
-
-
-
-
