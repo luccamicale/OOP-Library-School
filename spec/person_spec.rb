@@ -2,7 +2,6 @@ require_relative './spec_helper'
 
 describe Person do
   person = Person.new(25, name: 'gustavo')
-  capitalize_decorator = CapitalizeDecorator.new(person)
 
   it 'should be an instance of Person' do
     expect(person).to be_an_instance_of(Person)
