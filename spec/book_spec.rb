@@ -22,4 +22,4 @@ describe Book do
   it 'Book should have a attr_accessor' do
     expect(book).to respond_to('author')
   end
-end            
+end
