@@ -16,7 +16,7 @@ describe Book do
   end
 
   it 'Should have a title and author' do
-    expect(book.author).to eq ('Lucca')
+    expect(book.author).to eq('Lucca')
   end
 
   it 'Book should have a attr_accessor' do
