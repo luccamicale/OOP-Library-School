@@ -1,7 +1,7 @@
 require_relative './spec_helper'
 
 describe CapitalizeDecorator do
-  person = Person.new(25, name: 'Lucca')
+  person = Person.new(25, 'Lucca')
   capitalize_decorator = CapitalizeDecorator.new(person)
 
   it 'should capitalize the name to Lucca' do

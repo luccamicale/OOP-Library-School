@@ -1,7 +1,7 @@
 require_relative './spec_helper'
 
 describe Student do
-  student = Student.new('C1', 22, name: 'Lucca')
+  student = Student.new(22, 'C1', 'Lucca')
 
   it 'should have the name Lucca' do
     expect(student.name).to eq('Lucca')

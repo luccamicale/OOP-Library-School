@@ -1,7 +1,7 @@
 require_relative './spec_helper'
 
 describe Teacher do
-  teacher = Teacher.new('Math', 25, name: 'Camila')
+  teacher = Teacher.new(25, 'Math', 'Camila')
 
   it 'should have an age equals to 25' do
     expect(teacher.age).to eq(25)

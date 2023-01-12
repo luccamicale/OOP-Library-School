@@ -1,7 +1,7 @@
 require_relative './spec_helper'
 
 describe TrimmerDecorator do
-  person = Person.new(22, name: 'maximilian')
+  person = Person.new(22, 'maximilian')
   trimmer_decorator = TrimmerDecorator.new(person)
 
   it 'should have a method correct the name' do
